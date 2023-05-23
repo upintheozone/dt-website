@@ -1,0 +1,149 @@
+.phoneBezel{
+  display:block;
+  pointer-events: none;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  width:466px;
+  height:900px;
+}
+
+@media only screen and (max-height: 840px) {
+  .main{
+    transform: scale(0.9);
+  }
+}
+
+@media only screen and (max-height: 844px) {
+  .phoneBezel{
+    display:none;
+  }
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:100vh;
+}
+
+.container{
+  background-color:white;
+  display:block;
+  width:390px;
+  height:844px;
+  margin:0;
+  padding:0;
+  font-family: var(--inter-font) !important;
+}
+
+.headerTop{
+  display:block;
+  position:absolute;
+}
+
+.close{
+  display:block;
+  position:relative;
+  top:53px;
+  left:336px;
+  text-align:right;
+  cursor:pointer;
+
+}
+
+.closeSvg{
+  width:24px;
+  height:24px;
+}
+
+.header {
+  display: flex;
+  align-items: flex-end;
+  width:100%;
+  height: 250px;
+  /* border: 1px solid red; */
+  padding: 15px 30px 25px 30px;
+}
+
+.taskTitle{
+  font-size: 32px;
+  font-weight:500;
+}
+
+.taskDueDate{
+  font-size: 15px;
+  font-weight:500;
+  padding-top: 8px;
+}
+
+
+.highPriority{
+  background-color: #F7CCC8;
+  background-image: url("/highpriority.png");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.mediumPriority{
+  background-color: #FAE3BF;
+  background-image: url("/mediumpriority.png");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.lowPriority{
+  background-color: #CEF0CF;
+  background-image: url("/lowpriority.png");
+  background-size: cover;
+}
+
+.taskNotes{
+  display:block;
+  border: 30px solid white;
+  height: 464px;
+  overflow:scroll;
+}
+
+.taskOptions{
+  height: 130px;
+  display:flex;
+  padding: 15px 20px 0 20px;
+
+}
+
+.taskTimer{
+  height: 80px;
+  width: 250px;
+  background-color: #B9DDFC;
+  display:flex;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.timerSvg{
+  width:28px;
+  height:28px;
+  display: block;
+  margin-right: 10px;
+}
+
+.timerText{
+  font-size: 21px;
+  font-weight:500;
+  display: block;
+  margin-bottom: 1px;
+}
+
+.taskEdit{
+  height: 80px;
+  width: 80px;
+  background-color: #F8F8F8;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  margin-left: 20px;
+}
