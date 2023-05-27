@@ -17,7 +17,7 @@ export default function Timer() {
 
   const router = useRouter();
   const [task, setTask] = useState(null);
-  const [cookies, setTodos] = useCookies(['todos']);
+  const [cookies, setCookies] = useCookies(['todos']);
   const taskId = router.query.id;
 
   // Compare task id with tasks
@@ -82,7 +82,7 @@ export default function Timer() {
     setShowDonePopup(false);
     setTimerRunning(false);
     const updatedTodos = cookies.todos.filter(t => t.id !== taskId);
-    setTodos('todos', updatedTodos);
+    setCookies('todos', updatedTodos);
     router.push('/');
   };
 
